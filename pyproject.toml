@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "email-classification"
+version = "0.1.0"
+description = "Email classification API using FastAPI and Transformers"
+authors = ["Michal Ozimek <michaloit99@proton.me>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.15"
+torch = {version="^2.4", source="pytorch-cu121"}
+transformers = ">=4.40,<5.0"
+tokenizers = ">=0.20,<0.21"
+huggingface-hub = ">=0.24,<1.0"
+fastapi = "*"
+uvicorn = "*"
+nltk = "*"
+scikit-learn = "*"
+pandas = "*"
+numpy = "*"
+beautifulsoup4 = "*"
+
+[[tool.poetry.source]]
+name = "pytorch-cu121"
+url = "https://download.pytorch.org/whl/cu121"
+priority = "supplemental"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,17 @@
+- name: "task_0"
+  prompt: "Classify the overall tone of the message."
+  labels:
+    - "positive"
+    - "negative"
+    - "not sure"
+  chunk_size: 4
+
+- name: "task_1"
+  prompt: "Classify the main customer issue or topic."
+  labels:
+    - "an order or delivery issue"
+    - "a billing or payment problem"
+    - "a technical or app issue"
+    - "general feedback or suggestion"
+    - "another topic"
+  chunk_size: 2
