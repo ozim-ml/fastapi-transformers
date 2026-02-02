@@ -23,11 +23,6 @@ RUN --mount=type=cache,target=/root/.cache/pypoetry \
 
 RUN ./.venv/bin/python -c "import fastapi, uvicorn, pandas; print('deps OK')"
 
-<<<<<<< HEAD
-
-=======
-####
->>>>>>> b7c901fca5717c8dcbcc73148bfa8694cc17a86f
 FROM nvidia/cuda:12.1.1-runtime-ubuntu22.04
 ENV DEBIAN_FRONTEND=noninteractive
 
